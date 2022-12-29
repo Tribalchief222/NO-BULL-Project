@@ -1,0 +1,2010 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;700;900&family=Alfa+Slab+One&family=Anton&family=Bad+Script&family=Barlow+Condensed:wght@100;200;300;400;500;700;800&family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&family=Fuzzy+Bubbles&family=Tenali+Ramakrishna&family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .4s ease-in-out;
+    scroll-behavior: smooth;
+}
+.kang{
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+}
+.kang .kang-t1{
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    animation: kang-t1 10s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes kang-t1{
+    0%,35%{
+        opacity: 1;
+    }
+    65%,100%{
+        opacity: 0;
+    }
+}
+
+.kang .kang-t2{
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    animation: kang-t2 10s linear infinite;
+    animation-delay: 1.5s;
+}
+@keyframes kang-t2{
+    0%,50%{
+        opacity: 0;
+    }
+    50%,80%{
+        opacity: 1;
+    }
+}
+#close{
+    display: none;
+}
+.mobile{
+    display: none;
+}
+#header{
+    width: 100%;
+    position: sticky;
+    left: 0;
+    top: 0;
+    padding: 1.5rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 10px 10px 35px rgba(0,0,0,.1);
+    z-index: 10000;
+}
+#header .logo{
+    width: 100%;
+    height: 30px;
+}
+#header nav a{
+    margin: 0 20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+}
+#header .head-icons a{
+    color: #000;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+/*Home Section Starts*/
+
+#home{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.slideshow-container .images{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+.slideshow-container .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#slide-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 70px 100px;
+}
+#slide-text .gor{
+    font-family:  sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 7px;
+}
+#slide-text .weather{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 3.8rem;
+    line-height: 65px;
+    margin-bottom: 25px;
+}
+.btn{
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 15px 60px;
+    background-color: #fff;
+    color: #000;
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+/*Train Section Starts*/
+
+#train{
+    width: 100%;
+    height: 155vh;
+    overflow: hidden;
+    text-align: center;
+}
+#train .holiday .gi{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #aaa;
+}
+#train .holiday h1{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+#train .holiday .content-train .text-train{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.btns{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+    padding: 15px 30px;
+    margin-left: 10px;
+    letter-spacing: .0625rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+.btns:hover{
+    background-color: rgba(0,0,0,.7);
+}
+#train .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    gap: 10px;
+}
+#train .box-container .box{
+    position: relative;
+}
+#train .box-container .box .img-train{
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+}
+#train .box-container .box .img-train img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#train .box-container .box .image-text h2{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #fff;
+    letter-spacing: .125rem;
+    font-size: 25px;
+}
+#train .box-container .box .image-text h2 i{
+    opacity: 0;
+}
+#train .box-container .box:hover .img-train img,
+#train .box-container .box:hover .image-text h2 i{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+#train .container-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    gap: 10px;
+}
+#train .container-box .tain{
+    position: relative;
+    margin-top: 20px;
+}
+#train .container-box .tain .tain-img{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+#train .container-box .tain .tain-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#train .container-box .tain .tain-text h2{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #fff;
+    letter-spacing: .125rem;
+    font-size: 25px;
+}
+#train .container-box .tain .tain-text h2 i{
+    opacity: 0;
+}
+#train .container-box .tain:hover .tain-img img,
+#train .container-box .tain:hover .tain-text h2 i{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+/*Best Seller Section Swiper Js*/
+
+.heading{
+    width: 98%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin-top: 40px;
+}
+.heading h1{
+    font-size: 40px;
+}
+.heading p span{
+    font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #555;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 3px;
+}
+.heading p span:hover{
+    background-color: #222;
+    color: #fff;
+}
+
+#seller{
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    height: 45vh;
+}
+#seller .pro-container{
+    display: flex;
+    align-items: center;
+}
+#seller .pro-container::-webkit-scrollbar{
+    display: none;
+}
+#seller .pro-container .product{
+    min-width: 25%;
+    height: 90%;
+    margin: 0 20px 0 0;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+}
+#seller .pro-container .product .pro-img{
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#seller .pro-container .product .pro-img img{
+    width: 100%;
+}
+#seller .pro-container .product .pro-detail{
+    font-family: 'Work Sans', sans-serif;
+    position: absolute;
+    bottom: -4%;
+    left: 5%;
+    width: 90%;
+    padding: 5px;
+}
+#seller .pro-container .product .pro-detail p{
+    font-size: 12.5px;
+    color: #000;
+    font-weight: 500;
+}
+#seller .pro-container .product .pro-detail span{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/*Seasonal Gear / Training Section Starts*/
+
+#seasonal-gear{
+    width: 100%;
+    overflow: hidden;
+    height: 70vh;
+}
+#seasonal-gear .gear-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#seasonal-gear .gear-container .box{
+    flex: 1 1 50rem;
+    padding: 60px 10px;
+    cursor: pointer;
+    position: relative;
+}
+#seasonal-gear .gear-container .box .gear-img{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+#seasonal-gear .gear-container .box .gear-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#seasonal-gear .gear-container .box:hover .gear-img img{
+    transform: scale(1.1);
+}
+#seasonal-gear .gear-container .box .title-gear h1{
+    position: absolute;
+    bottom: 18%;
+    left: 5%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+}
+#seasonal-gear .gear-container .box .title-gear h1 i{
+    color: #fff;
+    margin-left: 10px;
+    opacity: 0;
+}
+#seasonal-gear .gear-container .box:hover .title-gear h1 i{
+    opacity: 1;
+}
+
+/*Member Section Starts*/
+
+#member{
+    width: 100%;
+    overflow: hidden;
+    background-color: #F1F2F5;
+    font-family: 'Work Sans', sans-serif;
+    height: auto;
+    margin-bottom: 10px;
+}
+#member .member-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 150px;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+}
+#member .member-container .box img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+#member .member-container .box .bee{
+    color: #686D73;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6.5px;
+}
+#member .member-container .box h3{
+    font-size: 28px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 6.5px;
+}
+#member .member-container .box p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 6.5px;
+    line-height: 22px;
+}
+.normal{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #000;
+    padding: 12px 45px;
+    background-color: transparent;
+    border: 2px solid #000;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .2s;
+}
+.normal:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/*Crossfit Section Starts*/
+
+/*Member Section Starts*/
+
+#crossfit{
+    width: 100%;
+    overflow: hidden;
+    background-color: #F1F2F5;
+    font-family: 'Work Sans', sans-serif;
+    height: auto;
+    margin-bottom: 10px;
+}
+#crossfit .member-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 150px;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+}
+#crossfit .member-container .box img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+#crossfit .member-container .box .bee{
+    color: #686D73;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6.5px;
+}
+#crossfit .member-container .box h3{
+    font-size: 28px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 6.5px;
+}
+#crossfit .member-container .box p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 6.5px;
+    line-height: 22px;
+}
+
+/*Banner Section Starts*/
+
+#banner{
+    width: 100%;
+    overflow: hidden;
+    height: 40vh;
+}
+#banner .banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#banner .banner-container .box{
+    flex: 1 1 30rem;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+#banner .banner-container .box .banner-img{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+#banner .banner-container .box .banner-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#banner .banner-container .box:hover .banner-img img{
+    transform: scale(1.1);
+}
+#banner .banner-container .box .banner-text h3{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #fff;
+    position: absolute;
+    bottom: 15%;
+    left: 7%;
+    font-size: 28px;
+    font-weight: 500;
+}
+#banner .banner-container .box .banner-text h3 i{
+    margin-left: 10px;
+    opacity: 0;
+}
+#banner .banner-container .box:hover .banner-text h3 i{
+    opacity: 1;
+}
+
+
+/*FAQS Section Starts*/
+
+#faq{
+    width: 100%;
+    overflow: hidden;
+    margin: 3rem 0;
+    text-align: center;
+}
+#faq .faq-text div{
+    font-family: 'Work Sans', sans-serif;
+    color: #686D73;
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+#faq .faq-text p{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 28px;
+    color: #181518;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+/*Footer Section Starts*/
+
+#footer{
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    padding: 60px 100px;
+}
+#footer .footer-container .box .h1{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 37px;
+    letter-spacing: 1.4px;
+    font-weight: 600;
+}
+#footer .footer-container .box form input{
+    width: 65%;
+    height: 45px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+#footer .footer-container .box form i{
+    color: #fff;
+    padding: 10px 30px;
+    background-color: #000;
+    position: relative;
+    right: 16%;
+    top: 2px;
+}
+#footer .footer-container .box .social-icon i{
+    font-size: 28px;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+#footer .footer-container .box .nav-1 a{
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+}
+#footer .footer-container .box h2{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    letter-spacing: 1.1px;
+}
+#footer .footer-container .box .nav-2 a{
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    display: block;
+    margin: 15px 0;
+    font-size: 13px;
+    position: relative;
+}
+#footer .footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer .footer-container .box .nav-2 a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: .3s linear;
+}
+#footer .footer-container .box .nav-2 a:hover::after{
+    width: 40%;
+}
+
+/*Copyright Section Starts*/
+
+#copyright{
+    width: 100%;
+    padding: 20px 150px;
+    background-color: #000;
+    border-top: 1px solid #aaa;
+    overflow: hidden;
+}
+#copyright .copy-that span{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+}
+
+                           
+
+/*                                               MEN APPAREL SECTION STARTS                                              */
+
+
+#men{
+    width: 100%;
+    overflow: hidden;
+    padding: 70px 150px;
+}
+#men .head-men{
+    border-bottom: 2px solid #000;
+    margin-bottom: 10px;
+}
+#men .head-men h1{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    line-height: 1.6px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#men .men-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#men .men-container .box{
+    flex:  1 1 20rem;
+    padding: 10px 12px;
+    border: 1px solid #000;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,.02);
+    margin: 15px 0;
+}
+#men .men-container .box .men-img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+#men .men-container .box .men-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+#men .men-container .box .men-text{
+    padding: 10px 0;
+}
+#men .men-container .box .men-text span{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #686D73;
+}
+#men .men-container .box .men-text p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 8px 0;
+}
+
+
+
+#pro-detail{
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 100px;
+    height: auto;
+}
+#pro-detail .pro-container .box .main-img-1 img{
+    width: 82%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+#pro-detail .pro-container .box .main-img-1 .small-img-group{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+#pro-detail .pro-container .box .main-img-1 .small-img-group .small-img-col{
+    width: 20%;
+    height: 20%;
+    overflow: hidden;
+}
+#pro-detail .pro-container .box .main-img-1 .small-img-group .small-img-col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+#pro-detail .pro-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+#pro-detail .pro-container .box span{
+    font-family: 'Work Sans', sans-serif;
+    color: #686D73;
+    font-size: 14px;
+    font-weight: 600;
+}
+#pro-detail .pro-container .box .pro-content-text p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#pro-detail .pro-container .box .pro-content-text pre{
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 20px;
+}
+#pro-detail .pro-container .box .pro-content-text .stars i{
+    font-size: 13px;
+    color: #000;
+}
+#pro-detail .pro-container .box .pro-content-text .stars a{
+    color: #000;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    margin-left: 10px;
+    text-decoration: underline;
+    font-weight: 500;
+}
+#pro-detail .pro-container .box .pro-content-text .size-box h1{
+    margin-top: 30px;
+    font-family: 'Work Sans', sans-serif;
+    color: #686D73;
+    font-size: 12px;
+    font-weight: 600;
+}
+#pro-detail .pro-container .box .pro-content-text .size-box a{
+    margin: 20px 0;
+    display: inline-block;
+    padding: 15px 50px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #aaa;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+#pro-detail .pro-container .box .pro-content-text .size-box a:hover{
+    border: 2px solid #676D73;
+}
+#pro-detail .pro-container .box .pro-content-text input{
+    width: 50px; 
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.size-btn a{
+    margin: 20px 0;
+}
+.size-btn{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    background-color: #000;
+    padding: 15px 45px;
+    color: #fff;
+}
+.size-btn:hover{
+    background-color: rgba(0,0,0,.8);
+}
+.accordian-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-color: #fff;
+    margin: 40px 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.accordian-container .accordian{
+    width: 100%;
+}
+.accordian-container .accordian .accordian-header{
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    margin: 5px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    cursor: pointer;
+}
+.accordian-container .accordian .accordian-header .icon i{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    height: 60px;
+    width: 50px;
+    line-height: 60px;
+    background-color: #000;
+    color: #fff;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.accordian-container .accordian .accordian-header h3{
+    display: inline;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.accordian-container .accordian .accordian-body{
+    padding: 10px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    background-color: #fff;
+    display: none;
+}
+.accordian-container .accordian .accordian-body ul li{
+    font-size: 13px;
+    line-height: 25px;
+}
+
+
+#gift-banner{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+}
+#gift-banner .gift-img{
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+#gift-banner .gift-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+#gift-banner .gift-banner-text{
+    position: absolute;
+    background-color: #4a4a4abf;
+    padding: 20px;
+    max-width: 632px;
+    top: 30%;
+    left: 5%;
+    z-index: 2;
+}
+#gift-banner .gift-banner-text span{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    line-height: 15px;
+    font-weight: 500;
+}
+#gift-banner .gift-banner-text h1{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+}
+#gift-banner .gift-banner-text p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    line-height: 22px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 799px){
+    
+    .kang .kang-t1 {
+        font-family: 'Fuzzy Bubbles', cursive;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        font-size: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        animation: kang-t1 10s linear infinite;
+        animation-delay: 1s;
+    }
+    @keyframes kang-t1{
+    0%,35%{
+        opacity: 1;
+    }
+    65%,100%{
+        opacity: 0;
+    }
+}
+    .kang .kang-t2 {
+        font-family: 'Fuzzy Bubbles', cursive;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        font-size: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        animation: kang-t1 10s linear infinite;
+        animation-delay: 1s;
+    }
+    @keyframes kang-t2{
+    0%,50%{
+        opacity: 0;
+    }
+    50%,80%{
+        opacity: 1;
+    }
+}
+    #close{
+        display: block;
+        position: absolute;
+        color: #fff;
+        top: 2%;
+        right: 30px;
+        font-size: 25px;
+    }
+    .mobile{
+        display: block;
+    }
+    #header{
+        position: relative;
+    }
+    #header nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        height: 27vh;
+        background-color: #000;
+    }
+    #header nav a{
+        margin: 10px 0;
+        text-align: left;
+        padding: 4px 40px;
+        color: #fff;
+    }
+    #header nav.active{
+        left: 0;;
+    }
+    
+    #slide-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 70px 50px;
+    }
+    .btn {
+        padding: 15px 40px;
+        background-color: #fff;
+        color: #000;
+        margin-top: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    
+    #train {
+        width: 100%;
+        height: 70vh;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    #train .holiday .content-train .text-train {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    
+    #train .box-container .box .img-train {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+    }
+    #train .box-container .box .img-train img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #train .container-box .tain .tain-img {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+    #train .container-box .tain .tain-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #train .container-box .tain .tain-text h2 {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        color: #fff;
+        letter-spacing: .125rem;
+        font-size: 18px;
+    }
+    
+    .heading h1 {
+        font-size: 25px;
+    }
+    .heading p span {
+        font-size: 30px;
+    }
+    #seller .pro-container .product {
+        min-width: 49%;
+        height: 90%;
+        margin: 0 10px 0 0;
+        border-radius: 20px;
+        position: relative;
+        left: 0;
+    }
+    #seller {
+        width: 100%;
+        overflow: hidden;
+        margin: auto;
+        height: 35vh;
+    }
+    #seasonal-gear .gear-container .box .gear-img {
+        width: 100%;
+        height: 240px;
+        overflow: hidden;
+    }
+    #seasonal-gear .gear-container .box .title-gear h1 {
+        position: absolute;
+        bottom: 18%;
+        left: 5%;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    #seasonal-gear {
+        width: 100%;
+        overflow: hidden;
+        height: 35vh;
+    }
+    #member .member-container .box img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+    #member .member-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        margin: 10px 0;
+        padding: 20px;
+        text-align: center;
+    }
+    #member .member-container .box .bee {
+        color: #686D73;
+        font-size: 11px;
+        font-weight: 600;
+        margin-bottom: 6.5px;
+    }
+    #member .member-container .box h3 {
+        font-size: 24px;
+        color: #000;
+        font-weight: 600;
+        margin-bottom: 6.5px;
+    }
+    #member .member-container .box p {
+        font-size: 13px;
+        font-weight: 400;
+        color: #000;
+        margin-bottom: 6.5px;
+        line-height: 22px;
+    }
+    
+    #crossfit .member-container .box img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+    #crossfit .member-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        margin: 10px 0;
+        padding: 20px;
+        text-align: center;
+    }
+    #crossfit .member-container .box .bee {
+        color: #686D73;
+        font-size: 11px;
+        font-weight: 600;
+        margin-bottom: 6.5px;
+    }
+    #crossfit .member-container .box h3 {
+        font-size: 24px;
+        color: #000;
+        font-weight: 600;
+        margin-bottom: 6.5px;
+    }
+    #crossfit .member-container .box p {
+        font-size: 13px;
+        font-weight: 400;
+        color: #000;
+        margin-bottom: 6.5px;
+        line-height: 22px;
+    }
+    
+    #banner .banner-container .box .banner-text h3 {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        color: #fff;
+        position: absolute;
+        bottom: 15%;
+        left: 7%;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    #banner {
+        width: 100%;
+        overflow: hidden;
+        height: 25vh;
+    }
+    
+    #footer {
+        width: 100%;
+        height: 35vh;
+        overflow: hidden;
+        background-color: #000;
+        color: #fff;
+        padding: 60px 30px;
+    }
+    #footer .footer-container .box h2 {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 25px;
+        letter-spacing: 1.1px;
+    }
+    #footer .footer-container .box .nav-2 a {
+        font-family: 'Work Sans', sans-serif;
+        color: #fff;
+        display: block;
+        margin: 15px 0;
+        font-size: 10px;
+        position: relative;
+    }
+    #footer .footer-container .box .h1 {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 37px;
+        letter-spacing: 1.4px;
+        font-weight: 600;
+    }
+    #footer .footer-container .box form input {
+        width: 75%;
+        height: 45px;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    #footer .footer-container .box form i {
+        color: #fff;
+        padding: 10px 30px;
+        background-color: #000;
+        position: relative;
+        right: 23%;
+        top: 2px;
+    }
+    #footer .footer-container .box .nav-1 a {
+        font-family: 'Work Sans', sans-serif;
+        color: #fff;
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    #copyright .copy-that span {
+        font-size: 7px;
+        color: #fff;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    
+    #men {
+        width: 100%;
+        overflow: hidden;
+        padding: 70px 20px;
+    }
+    
+    
+    #pro-detail .pro-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    #pro-detail .pro-container .box .main-img-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        cursor: pointer;
+    }
+    #pro-detail .pro-container .box .main-img-1 .small-img-group .small-img-col {
+        width: 25%;
+        height: 25%;
+        overflow: hidden;
+    }
+    
+    
+    
+    
+    #gift-banner .gift-banner-text {
+        position: absolute;
+        background-color: #4a4a4abf;
+        padding: 20px;
+        max-width: 500px;
+        top: 17%;
+        left: 5%;
+        z-index: 2;
+    }
+    #gift-banner .gift-banner-text h1 {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        color: #fff;
+    }
+    #gift-banner .gift-banner-text span {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 12px;
+        color: #fff;
+        line-height: 15px;
+        font-weight: 500;
+    }
+    #gift-banner .gift-banner-text p {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 11px;
+        color: #fff;
+        line-height: 22px;
+        margin-top: 5px;
+    }
+}
+
+
+@media (max-width: 499px){
+    #header .head-icons a{
+        display: none;
+    }
+    #header nav{
+        height: 35vh;
+    }
+    
+    .btn {
+        padding: 15px 40px;
+        background-color: #fff;
+        color: #000;
+        margin-top: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        font-size: 12px;
+    }
+    #slide-text .weather {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        font-size: 3rem;
+        line-height: 65px;
+        margin-bottom: 25px;
+    }
+    #slide-text .gor {
+        font-family: sans-serif;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        font-size: 12px;
+        color: #fff;
+        margin-bottom: 7px;
+    }
+    
+    #train .holiday h1 {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    #train .holiday .gi {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #aaa;
+    }
+    #train .holiday .content-train .text-train {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    .btns {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: 500;
+        color: #fff;
+        background-color: #000;
+        padding: 15px 30px;
+        letter-spacing: .0625rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+    }
+    
+    #train .box-container .box{
+        margin-top: 15px;
+    }
+    #train .box-container .box .img-train {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+    }
+    #train .box-container .box .img-train img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #train .box-container .box .image-text h2 {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        color: #fff;
+        letter-spacing: .125rem;
+        font-size: 15px;
+    }
+    
+    #train .container-box .tain .tain-img {
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+    }
+    #train .container-box .tain .tain-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #train .container-box .tain .tain-text h2 {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        color: #fff;
+        letter-spacing: .125rem;
+        font-size: 6px;
+    }
+    
+    .heading h1 {
+        font-size: 18px;
+    }
+    .heading p span {
+        font-size: 25px;
+    }
+    #seller .pro-container .product {
+        min-width: 100%;
+        height: 90%;
+        margin: 0 10px 0 0;
+        border-radius: 20px;
+        position: relative;
+        left: 0;
+    }
+    #seller .pro-container .product .pro-detail span {
+        font-size: 10px;
+        font-weight: 700;
+    }
+    #seller .pro-container .product .pro-detail span {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    #seller {
+        width: 100%;
+        overflow: hidden;
+        margin: auto;
+        height: 40vh;
+    }
+    #seasonal-gear .gear-container .box {
+        flex: 1 1 100rem;
+        padding: 60px 10px;
+        cursor: pointer;
+        position: relative;
+    }
+    #seasonal-gear .gear-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #seasonal-gear .gear-container .box {
+        flex: 0;
+        padding: 10px 10px;
+        cursor: pointer;
+        position: relative;
+    }
+    #seasonal-gear .gear-container .box .title-gear h1 {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #seasonal-gear {
+        width: 100%;
+        overflow: hidden;
+        height: 67vh;
+    }
+    
+    #member .member-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        margin: 10px 0;
+        padding: 20px;
+        text-align: center;
+    }
+    #member .member-container .box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #crossfit .member-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        margin: 10px 0;
+        padding: 20px;
+        text-align: center;
+    }
+    #crossfit .member-container .box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #banner .banner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #banner .banner-container .box {
+        flex: 0;
+        padding: 10px;
+        cursor: pointer;
+        position: relative;
+    }
+    #banner .banner-container .box .banner-img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    #banner .banner-container .box .banner-text h3 {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        color: #fff;
+        position: absolute;
+        bottom: 10%;
+        left: 7%;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    
+    #banner {
+        width: 100%;
+        overflow: hidden;
+        height: 100vh;
+    }
+    #faq .faq-text p {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 18px;
+        color: #181518;
+        margin-bottom: 14px;
+        font-weight: 600;
+    }
+    #faq .faq-text p {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 14px;
+        color: #181518;
+        margin-bottom: 14px;
+        font-weight: 600;
+    }
+    #faq .faq-text div {
+        font-family: 'Work Sans', sans-serif;
+        color: #686D73;
+        font-size: 10px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    #faq .faq-text .normal{
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+    #faq {
+        width: 100%;
+        overflow: hidden;
+        margin: 1rem 0;
+        text-align: center;
+    }
+    
+    #footer {
+        width: 100%;
+        height: 110vh;
+        overflow: hidden;
+        background-color: #000;
+        color: #fff;
+        padding: 20px;
+    }
+    #footer .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer .footer-container .box h2 {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        margin: 10px auto;
+        letter-spacing: 1.1px;
+        text-align: center;
+    }
+    #footer .footer-container .box .nav-2 a {
+        font-family: 'Work Sans', sans-serif;
+        color: #fff;
+        display: block;
+        margin: 15px auto;
+        font-size: 13px;
+        position: relative;
+        text-align: center;
+    }
+    #footer .footer-container .box .h1 {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 18px;
+        margin: 10px auto;
+        line-height: 37px;
+        letter-spacing: 1.4px;
+        font-weight: 600;
+    }
+    #footer .footer-container .box form i {
+        display: none;
+    }
+    #footer .footer-container .box form input {
+        width: 100%;
+        height: 45px;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    #footer .footer-container .box .social-icon i {
+        font-size: 20px;
+        margin-left: 20px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    #copyright {
+        width: 100%;
+        padding: 10px 10px;
+        background-color: #000;
+        border-top: 1px solid #aaa;
+        overflow: hidden;
+    }
+    #copyright .copy-that span {
+        font-size: 6px;
+        color: #fff;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    
+    
+    #men .men-container .box {
+        flex: 1 1 10rem;
+        padding: 10px 12px;
+        border: 1px solid #000;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,.02);
+        margin: 15px 0;
+    }
+    #men .men-container .box .men-img {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+    }
+    #men .men-container .box .men-text span {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        color: #686D73;
+    }
+    #men .men-container .box .men-text p {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        margin: 8px 0;
+    }
+    
+    
+    
+    #pro-detail {
+        width: 100%;
+        overflow: hidden;
+        padding: 20px 20px;
+        height: auto;
+    }
+    #pro-detail .pro-container .box span {
+        font-family: 'Work Sans', sans-serif;
+        color: #686D73;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    #pro-detail .pro-container .box .pro-content-text p {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 19px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        line-height: 25px;
+        color: #000;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #pro-detail .pro-container .box .pro-content-text pre {
+        font-size: 12px;
+        font-family: 'Work Sans', sans-serif;
+        margin-bottom: 20px;
+    }
+    #pro-detail .pro-container .box .pro-content-text .size-box a {
+        margin: 5px 0;
+        display: inline-block;
+        padding: 15px 50px;
+        background-color: #fff;
+        color: #000;
+        border: 2px solid #aaa;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    
+    #gift-banner .gift-img {
+        overflow: hidden;
+        width: 100%;
+        height: 200px;
+    }
+    #gift-banner .gift-banner-text {
+        position: absolute;
+        background-color: #4a4a4abf;
+        padding: 20px;
+        max-width: 340px;
+        left: 5%;
+        z-index: 2;
+    }
+    #gift-banner .gift-banner-text span {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 8px;
+        color: #fff;
+        line-height: 15px;
+        font-weight: 500;
+    }
+    #gift-banner .gift-banner-text h1 {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+    }
+    #gift-banner .gift-banner-text p {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 10px;
+        color: #fff;
+        line-height: 22px;
+        margin-top: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
